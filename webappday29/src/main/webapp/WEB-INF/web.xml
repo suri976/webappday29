@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>webappday26</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>links.html</welcome-file>
+    <welcome-file>gcd.html</welcome-file>
+    <welcome-file>leapyear.html</welcome-file>
+    <welcome-file>palindrom.html</welcome-file>
+    <welcome-file>reverse.html</welcome-file>
+    <welcome-file>strongnumber.html</welcome-file>
+    <welcome-file>substring.html</welcome-file>
+    
+  </welcome-file-list>
+  
+  
+  <session-config>
+  <session-timeout>1</session-timeout>
+  </session-config>
+  
+  
+  
+  
+  <context-param>   <!--data is available to servlet via   -->
+  <param-name>counter</param-name>
+  <param-value>25</param-value>
+  
+  </context-param>
+  
+  
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>Welcome</servlet-name>
+    <servlet-class>ai.jobiak.webapp.Welcome</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Welcome</servlet-name>
+    <url-pattern>/begin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Intro</display-name>
+    <servlet-name>Intro</servlet-name>
+    <servlet-class>ai.jobiak.webapp.Intro</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Intro</servlet-name>
+    <url-pattern>/Intro</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FactorialServlet</display-name>
+    <servlet-name>FactorialServlet</servlet-name>
+    <servlet-class>ai.jobiak.webapp.FactorialServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FactorialServlet</servlet-name>
+    <url-pattern>/fact</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>JdbcServlet</display-name>
+    <servlet-name>JdbcServlet</servlet-name>
+    <servlet-class>ai.jobiak.webapp.JdbcServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JdbcServlet</servlet-name>
+    <url-pattern>/connect</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>LifeCycleSevlet</servlet-name>
+    <servlet-class>ai.jobiak.webapp.LifeCycleSevlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LifeCycleSevlet</servlet-name>
+    <url-pattern>/go</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Factorial</servlet-name>
+    <servlet-class>ai.jobiak.webapp.Factorial</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Factorial</servlet-name>
+    <url-pattern>/facto</url-pattern>
+  </servlet-mapping>
+  
+ 
+  <servlet>
+    <servlet-name>Calculator</servlet-name>
+    <servlet-class>ai.jobiak.webapp.Calculator</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Calculator</servlet-name>
+    <url-pattern>/calc</url-pattern>
+  </servlet-mapping> 
+  
+  
+  
+  
+  
+  
+  
+</web-app>

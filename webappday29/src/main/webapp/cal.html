@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.myDiv {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+</style>
+
+<meta charset="ISO-8859-1">
+<title>Calculator</title>
+</head>
+<center>
+<div class="myDiv">
+<body>
+<form action="cal" method="post">
+  <label >First Number:</label>
+  <input type="text" name="fnum"><br><br>
+  <label >Second number:</label>
+  <input type="text"  name="snum"><br><br>
+
+ <input type="radio" name="opr" value="+">ADD 
+ <br>
+<input type="radio" name="opr" value="-"> SUBTRACT
+<br>
+<input type="radio" name="opr" value="*">MULTIPLY 
+<br>
+<input type="radio" name="opr" value="/">DIVIDE
+ <br> <input type="reset">
+
+<input type="submit" value="Calculate" >
+ </body>
+</form>
+</div>
+</center>
+</body>
+</html>
